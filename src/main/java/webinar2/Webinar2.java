@@ -38,12 +38,21 @@ public class Webinar2 {
             displaySumWithArguments(40, 35);
             displaySumWithArguments(100, 32);
             displaySumWithArguments(0, 500);
+            displaySubstract();
+            displaySubstractWithArguments(5,3);
 
-            int result = sum(15, 25); // zwrócone zostało 40
-            System.out.println(result);
+            int resultSum = sum(15, 25); // zwrócone zostało 40
+            System.out.println(resultSum);
 
-            System.out.println(sum(100,50));
+            System.out.println(sum(100, 50));
+
+            int resultSubstract = substract(30, 45);
+            System.out.println(resultSubstract);
+
+            System.out.println(substract(100, 20));
+
         }
+
 
         // metoda nie zwracająca wartości - void
         // nie mogę użyć return
@@ -53,18 +62,36 @@ public class Webinar2 {
             System.out.println(numberOne + numberTwo);
         }
 
+        public static void displaySubstract() {
+            int numberOne = 5;
+            int numberTwo = 3;
+            System.out.println(numberOne - numberTwo);
+        }
+
         // metoda z argumentami (parametry) - każdy oddzielamy przecinkiem - każdy argument automatycznie tworzy zmienną
         public static void displaySumWithArguments(int numberOne, int numberTwo) {
             System.out.println(numberOne + numberTwo);
         }
 
+        private static void displaySubstractWithArguments(int numberOne, int numberTwo) {
+            System.out.println(numberOne - numberTwo);
+        }
+
+
         // metoda zwraca wartość - trzeba podać typ jaki jest zwracany do miejsca, gdzie wywołano (uruchomiono) metodę
         // metoda zwracająca wartość musi mieć return
         public static int sum(int numberOne, int numberTwo) {
-            int result = numberOne + numberTwo;
-            return result;
+            int resultSum = numberOne + numberTwo;
+            return resultSum;
         }
-    }
 
+        public static int substract(int numberOne, int numberTwo) {
+
+            int resultSubstract = numberOne - numberTwo;
+
+            return resultSubstract;
+        }
+
+    }
 
 }
