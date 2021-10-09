@@ -1,4 +1,4 @@
-package webinar3.ex2_nonprimitive;
+package webinar3.ex3_operators_examples;
 
 public class ArithmeticOperatorsExamples {
 
